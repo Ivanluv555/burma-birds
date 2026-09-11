@@ -1,60 +1,142 @@
-# 🌱 Welcome to the burma-birds Repository | burma-birds Repository ကိုကြိုဆိုပါတယ်
+# 🌿 Burma Biodiversity Platform - Birds of Burma
 
-This repository is part of the **Burma Biodiversity Platform** — an open, student-led, and citizen-powered project to explore and share the biodiversity of Burma.  
-ဒီ repository သည် **Burma Biodiversity Platform** ၏အစိတ်အပိုင်းတစ်ခုဖြစ်ပြီး၊ ကျောင်းသားများ၊ ပုဂ္ဂိုလ်ရေး ဝါသနာရှင်များအတွက် ဖွင့်လှစ်ထားသော သဘာဝအမျိုးမျိုးသက်ရှိများကို လေ့လာဝေမျှနိုင်သောပလက်ဖောင်းတစ်ခု ဖြစ်ပါသည်။
+**缅甸生物多样性平台 - 缅甸鸟类 | မြန်မာဇီဝမျိုးစုံမျိုးစေ့ပလက်ဖောင် - မြန်မာငှက်များ**
 
-## 🧩 What Is This Repo For? | Repo ၏ရည်ရွယ်ချက်
+A multilingual web platform showcasing the rich biodiversity of Burma, with a focus on endemic and threatened bird species.
 
-A bird database and resource for birds in Burma. Includes names, photos, habitats, and sightings.  
-A bird database and resource for birds in Burma. Includes names, photos, habitats, and sightings.
+一个多语言网络平台，展示缅甸丰富的生物多样性，重点关注特有和受威胁的鸟类物种。
 
-## 👩‍🔬 Who Can Contribute? | ဘယ်သူတွေပါဝင်နိုင်သလဲ?
+မြန်မာနိုင်ငံ၏ကြွယ်ဝသော ဇီဝမျိုးစုံမျိုးစေ့ကိုပြသသည့် ဘာသာစကားများစွာဖြင့် ဝက်ဘ်ပလက်ဖောင်တစ်ခုဖြစ်ပြီး၊ အန္တရာယ်ကျရောက်နေသော ငှက်မျိုးစိတ်များကို အဓိကထားပြသထားသည်။
 
-Everyone! This includes:  
-အားလုံးပါဝင်နိုင်ပါတယ်။ အထဲတွင်အောက်ပါသူများပါဝင်သည် -  
-- Students (High school, university) | ကျောင်းသားများ
-- Nature lovers and bird watchers | သဘာဝချစ်သူများ၊ ငှက်လေ့လာသူများ
-- Amateur naturalists | ဝါသနာပါတဲ့ သဘာဝသိပ္ပံဝါဒရှင်များ
-- Engineers and coders (all levels!) | အင်ဂျင်နီယာများနှင့် ကွန်ပျူတာအတတ်ပညာရှင်များ
-- Writers, translators, and artists | စာရေးဆရာများ၊ ဘာသာပြန်များ၊ အနုပညာရှင်များ
+## ✨ Features / 功能特点 / လုပ်ဆောင်ချက်များ
 
-## 🛠️ What You Can Do Here | ဒီမှာ ဘာလုပ်လို့ရမလဲ?
+- 🌍 **Multilingual Support** - English, Burmese (မြန်မာ), and Chinese (中文)
+- 🔍 **Search Functionality** - Search birds by name or scientific name
+- 🎨 **Modern UI** - Built with React and Tailwind CSS
+- 📱 **Responsive Design** - Works on all devices
+- ♿ **Accessible** - Keyboard navigation and screen reader friendly
+- 🚀 **Static Site** - Fast loading, can be hosted anywhere
+- 🎯 **Conservation Focus** - Highlights endangered species with IUCN status
 
-| You Can... | Example Activities | ဘာလုပ်လို့ရမလဲ | ဥပမာလုပ်ဆောင်ချက်များ |
-|------------|--------------------|------------------|------------------------|
-| 📸 Add photos | Birds, trees, insects | ဓာတ်ပုံထည့် | ငှက်များ၊ သစ်များ၊ ပိုးမွှားများ |
-| 📝 Add info | Species names, locations, habitats | အချက်အလက်ထည့် | အမျိုးအစားအမည်များ၊ တည်နေရာများ |
-| 🧑‍💻 Improve layout | Help with HTML/CSS or components | အပြင်အဆင်တိုးတက်အောင်လုပ် | ဝဘ်ဒီဇိုင်း ကူညီ |
-| 🌐 Translate | Add Burmese/English text | ဘာသာပြန် | မြန်မာ/အင်္ဂလိပ်ဘာသာ |
-| 🧪 Suggest ideas | Help improve our system! | အကြံပြုချက်တင်ပြ | စနစ်တိုးတက်အောင်ကူညီ |
+## 🚀 Quick Start / 快速开始 / စတင်ရန်
 
-## 🚀 How To Get Started | စတင်ရန်အဆင့်များ
+### Prerequisites / 前置要求 / လိုအပ်ချက်များ
 
-1. Browse the files or issues. | ဖိုင်များ သို့မဟုတ် ပြဿနာများကြည့်ပါ။
-2. Pick something small — typo, translation, bug fix. | သေးငယ်သောအရာတစ်ခုကိုရွေးပါ။
-3. Fork the repo, make your changes, and submit a pull request. | Repo ကို Fork လုပ်ပြီး ပြင်ဆင်ချက်ပြုလုပ်ပါ။
-4. Or, send your contributions via Google Docs/Sheets if you're not confident in GitHub. | GitHub အသုံးပြုမမသိလျှင် Google Docs/Sheets ဖြင့်လည်း ပေးပို့နိုင်ပါတယ်။
+- Node.js 18+ 
+- npm or yarn
 
-## 📚 Learn As You Go | လုပ်ရင်းသင်ကြားပါ
+### Installation / 安装 / ထည့်သွင်းခြင်း
 
-We encourage learning by doing! | လုပ်ရင်းသင်ကြားမှုကိုကျွန်ုပ်တို့အားပေးပါသည်။
-- GitHub & open source | GitHub နှင့် ဖွင့်လှစ်ရင်းမြစ်ပညာ
-- HTML/CSS and Markdown | ဝဘ်နည်းပညာအခြေခံများ
-- Biodiversity data | သဘာဝမျိုးစုံသက်ရှိဒေတာ
-- Maps and visualizations | မြေပုံနှင့်အမြင်ဖော်ပြမှု
-- Environmental science | သဘာဝပတ်ဝန်းကျင်ဗေဒ
+```bash
+# Clone the repository
+git clone https://github.com/burma-biodiv-platform/burma-birds.git
+cd burma-birds
 
-## 🧭 Guidelines | လုပ်ဆောင်ရမည့်စည်းကမ်းများ
+# Install dependencies
+npm install
 
-- Be kind and respectful to others | တစ်ဦးချင်းအားလုံးကိုရိုသေပါ
-- Use real and verifiable information | တကယ်ဖြစ်သောအချက်အလက်များကိုသုံးပါ
-- Credit your sources and photos | သင်သုံးထားသောအချက်အလက်များကို ရင်းမြစ်ဖော်ပြပါ
-- Try your best — even small help matters! | သင့်အကောင်းဆုံးကြိုးစားပါ။
+# Start development server
+npm run dev
+```
 
-## 📬 Contact | ဆက်သွယ်ရန်
+Visit http://localhost:5173 to see the app running.
 
-If you need help, create an issue or contact the team. You can ask in **Burmese or English**.  
-အကူအညီလိုအပ်ပါက issue တစ်ခုဖန်တီးပါ သို့မဟုတ်အဖွဲ့ကိုဆက်သွယ်ပါ။ မြန်မာဘာသာ သို့မဟုတ် အင်္ဂလိပ်ဘာသာဖြင့်မေးနိုင်ပါသည်။
+### Build for Production / 生产构建 / ထုတ်လုပ်မှုအတွက်တည်ဆောက်ခြင်း
+
+```bash
+npm run build
+```
+
+The static files will be generated in the `dist/` directory and can be deployed to any static hosting service.
+
+## 📁 Project Structure / 项目结构 / စီမံကိန်းဖွဲ့စည်းပုံ
+
+```
+burma-birds/
+├── src/
+│   ├── components/          # React components
+│   │   ├── Header.jsx      # Header with language switcher
+│   │   ├── Footer.jsx      # Footer component
+│   │   ├── SearchBar.jsx   # Search input component
+│   │   ├── BirdCard.jsx    # Individual bird card
+│   │   └── BirdGrid.jsx    # Grid layout for birds
+│   ├── data/
+│   │   └── birds.js        # Bird species data
+│   ├── i18n.js             # Internationalization config
+│   ├── App.jsx             # Main application component
+│   └── main.jsx            # Application entry point
+├── public/                  # Static assets
+├── dist/                    # Production build output
+└── index.html              # HTML template
+```
+
+## 🌐 Internationalization / 国际化 / ဘာသာစကားများ
+
+The platform supports three languages:
+
+- **English** - Primary language
+- **မြန်မာ (Burmese)** - Native language of Burma
+- **中文 (Chinese)** - For broader regional access
+
+Users can switch languages using the buttons in the top-right corner of the page.
+
+### Adding New Languages / 添加新语言
+
+Edit `src/i18n.js` to add translations for new languages. See [DEPLOYMENT.md](./DEPLOYMENT.md) for details.
+
+## 🦜 Bird Data / 鸟类数据
+
+The platform currently features:
+- Endemic species of Burma
+- Threatened and endangered species
+- Species with IUCN conservation status
+- High-quality photos from Macaulay Library and Wikimedia Commons
+
+To add new bird species, edit `src/data/birds.js`.
+
+## 🛠️ Technology Stack / 技术栈
+
+- **React 19** - Modern UI library
+- **Vite 8** - Fast build tool and dev server
+- **Tailwind CSS** - Utility-first CSS framework
+- **i18next** - Internationalization framework
+- **React i18next** - React integration for i18n
+
+## 📦 Deployment / 部署
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions for:
+- GitHub Pages
+- Netlify
+- Vercel
+- Cloudflare Pages
+- Any static hosting service
+
+## 🤝 Contributing / 贡献 / ပံ့ပိုးကူညီခြင်း
+
+We welcome contributions from amateur volunteers, students, and biodiversity enthusiasts!
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+
+## 📄 License / 许可证
+
+- **Code**: MIT License
+- **Content**: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+
+## 🙏 Acknowledgments / 致谢 / ကျေးဇူးတင်ခြင်း
+
+- Bird photos from [Macaulay Library](https://www.macaulaylibrary.org/) and Wikimedia Commons
+- Built with ❤️ by amateur volunteers and engineering students
+- For Burma's biodiversity conservation
+
+## 📧 Contact / 联系方式
+
+- GitHub: [burma-biodiv-platform/burma-birds](https://github.com/burma-biodiv-platform/burma-birds)
+- Issues: Please report bugs and feature requests via GitHub Issues
 
 ---
-🌏 **Burma Biodiversity Platform** | https://burma-biodiv-platform.github.io/
+
+**Note**: This is an educational and conservation-focused project. All bird data and images are used with proper attribution and under appropriate licenses.
+
+**注意**: 这是一个教育和保护导向的项目。所有鸟类数据和图像均已适当署名并遵循相应许可协议。
+
+**မှတ်ချက်**: ဤသည်မှာ ပညာရေးနှင့် ထိန်းသိမ်းရေးအတွက် စီမံကိန်းတစ်ခုဖြစ်သည်။ ငှက်များဆိုင်ရာ အချက်အလက်နှင့် ရုပ်ပုံအားလုံးကို သင့်လျော်သော ခွင့်ပြုချက်ဖြင့် အသုံးပြုထားပါသည်။

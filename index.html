@@ -1,25 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Burma Birds</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="bg-gray-100 text-gray-900">
-  <div class="max-w-screen-xl mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold mb-4 text-center">Birds of Burma</h1>
-    <input
-      type="text"
-      id="searchInput"
-      placeholder="Search birds by name..."
-      class="w-full p-3 mb-6 rounded border border-gray-300 focus:outline-none focus:ring focus:border-blue-300"
-    />
-    <div id="birdCards" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
-  </div>
-
-  <script src="data.js"></script>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore and protect Burma's biodiversity - A platform showcasing birds of Burma" />
+    <title>Burma Biodiversity Platform - Birds of Burma</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
