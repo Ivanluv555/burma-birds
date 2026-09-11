@@ -22,12 +22,12 @@ function Footer() {
           <div>
             <h3 className="text-white font-bold mb-4">Quick Links</h3>
             <div className="space-y-2">
-              <a href="index.html" className="block text-sm hover:text-emerald-400 transition-colors">
+              <button
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                className="block text-sm hover:text-emerald-400 transition-colors text-left"
+              >
                 {t('home')}
-              </a>
-              <a href="support.html" className="block text-sm hover:text-emerald-400 transition-colors">
-                {t('support')}
-              </a>
+              </button>
               <a
                 href="https://github.com/burma-biodiv-platform/burma-birds"
                 target="_blank"

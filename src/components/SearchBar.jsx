@@ -5,7 +5,16 @@ function SearchBar({ value, onChange }) {
 
   const handleKeyDown = (e) => {
     if (e.key === 'Escape') {
-      onChange({ target: { value: '' } });
+      // Create a proper synthetic event with necessary properties
+      const syntheticEvent = {
+        target: { value: '' },
+        currentTarget: e.currentTarget,
+        preventDefault: () => {},
+        stopPropagation: () => {},
+        key: 'Escape',
+        type: 'change'
+      };
+      onChange(syntheticEvent);
     }
   };
 
@@ -27,7 +36,16 @@ function SearchBar({ value, onChange }) {
       />
       {value && (
         <button
-          onClick={() => onChange({ target: { value: '' } })}
+          onClick={(e) => {
+            const syntheticEvent = {
+              target: { value: '' },
+              currentTarget: e.currentTarget,
+              preventDefault: () => {},
+              stopPropagation: () => {},
+              type: 'change'
+            };
+            onChange(syntheticEvent);
+          }}
           className="absolute inset-y-0 right-0 pr-4 flex items-center text-gray-400 hover:text-gray-600 transition-colors"
           aria-label="Clear search"
         >

@@ -17,7 +17,7 @@ function BirdCard({ bird, onClick }) {
     }
   };
 
-  const handleImageError = (e) => {
+  const handleImageError = () => {
     console.log('Image failed to load:', bird.image);
     setImageError(true);
     setImageLoaded(true);
@@ -31,9 +31,8 @@ function BirdCard({ bird, onClick }) {
   return (
     <div
       className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer"
-      onClick={handleClick}
     >
-      <div className="relative overflow-hidden aspect-[4/3]">
+      <div className="relative overflow-hidden aspect-[4/3]" onClick={handleClick}>
         {!imageLoaded && !imageError && (
           <div className="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center">
             <span className="text-gray-400">Loading...</span>
@@ -59,7 +58,7 @@ function BirdCard({ bird, onClick }) {
           />
         )}
         <div className={`absolute top-3 right-3 px-3 py-1.5 text-xs font-bold rounded-full shadow-lg ${getConservationStatusColor(bird.conservation_status)}`}>
-          {t(`conservation.${bird.conservation_status}`)}
+          {t(`conservation.${bird.conservation_status}`, bird.conservation_status)}
         </div>
       </div>
 
@@ -74,7 +73,10 @@ function BirdCard({ bird, onClick }) {
           {bird.description}
         </p>
         <button
-          onClick={handleClick}
+          onClick={(e) => {
+            e.stopPropagation();
+            handleClick(e);
+          }}
           className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
         >
           {t('viewDetails')}

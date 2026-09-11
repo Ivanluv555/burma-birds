@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
@@ -13,15 +13,20 @@ function App() {
   const [selectedBird, setSelectedBird] = useState(null);
   const [cardPosition, setCardPosition] = useState(null);
 
+  // Normalize Unicode for search compatibility
+  const normalizeText = (text) => {
+    return text.normalize('NFC').toLowerCase();
+  };
+
   const filteredBirds = useMemo(() => {
     if (!searchQuery.trim()) {
       return birds;
     }
 
-    const query = searchQuery.toLowerCase();
+    const query = normalizeText(searchQuery);
     return birds.filter((bird) =>
-      bird.name.toLowerCase().includes(query) ||
-      bird.scientific_name.toLowerCase().includes(query)
+      normalizeText(bird.name).includes(query) ||
+      normalizeText(bird.scientific_name).includes(query)
     );
   }, [searchQuery]);
 
@@ -42,6 +47,13 @@ function App() {
     // Restore body scroll
     document.body.style.overflow = 'unset';
   };
+
+  // Cleanup: Restore body scroll on unmount
+  useEffect(() => {
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col">

@@ -18,13 +18,11 @@ function BirdGrid({ birds, onBirdClick }) {
     );
   }
 
-  const resultKey = birds.length === 1 ? 'showingResults_one' : 'showingResults_other';
-
   return (
     <>
       <div className="mb-8">
         <p className="text-gray-600 text-center">
-          {t(resultKey, { count: birds.length })}
+          {t('showingResults', { count: birds.length })}
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">

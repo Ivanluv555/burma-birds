@@ -20,7 +20,11 @@ const resources = {
         NT: "Near Threatened",
         VU: "Vulnerable",
         EN: "Endangered",
-        CR: "Critically Endangered"
+        CR: "Critically Endangered",
+        EX: "Extinct",
+        EW: "Extinct in the Wild",
+        DD: "Data Deficient",
+        NE: "Not Evaluated"
       },
       photo: "Photo",
       noResults: "No birds found",
@@ -53,7 +57,11 @@ const resources = {
         NT: "အန္တရာယ်နီးနေသော",
         VU: "ထိခိုက်လွယ်သော",
         EN: "မျိုးသုဉ်းလုနီးပါး",
-        CR: "အလွန်အန္တရာယ်ကျရောက်နေသော"
+        CR: "အလွန်အန္တရာယ်ကျရောက်နေသော",
+        EX: "မျိုးသုဉ်းပျောက်ကွယ်",
+        EW: "သဘာဝတွင်မျိုးသုဉ်း",
+        DD: "အချက်အလက်မလုံလောက်",
+        NE: "အကဲဖြတ်ခြင်းမရှိသေး"
       },
       photo: "ဓာတ်ပုံ",
       noResults: "ငှက်များမတွေ့ပါ",
@@ -86,7 +94,11 @@ const resources = {
         NT: "近危",
         VU: "易危",
         EN: "濒危",
-        CR: "极危"
+        CR: "极危",
+        EX: "灭绝",
+        EW: "野外灭绝",
+        DD: "数据缺乏",
+        NE: "未评估"
       },
       photo: "照片",
       noResults: "未找到鸟类",

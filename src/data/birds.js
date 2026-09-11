@@ -1,4 +1,5 @@
-export const birds = [
+// Freeze the array to prevent accidental mutations
+export const birds = Object.freeze([
   {
     id: 1,
     name: "Burmese Bushlark",
@@ -120,4 +121,4 @@ export const birds = [
     habitat: "Freshwater wetlands, lakes, and rivers.",
     conservation_status: "NT"
   }
-];
+]);

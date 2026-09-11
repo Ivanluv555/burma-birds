@@ -43,7 +43,8 @@ function BirdDetail({ bird, onClose, initialPosition }) {
 
     const translateX = cardCenterX - centerX;
     const translateY = cardCenterY - centerY;
-    const scale = Math.min(initialPosition.width / 800, 0.3);
+    // Prevent division by zero and ensure minimum scale
+    const scale = initialPosition.width > 0 ? Math.min(initialPosition.width / 800, 0.3) : 0.1;
 
     return {
       transform: `translate(${translateX}px, ${translateY}px) scale(${scale})`,
@@ -102,7 +103,7 @@ function BirdDetail({ bird, onClose, initialPosition }) {
               />
             )}
             <div className={`absolute top-4 right-4 px-4 py-2 text-sm font-bold rounded-full shadow-lg ${getConservationStatusColor(bird.conservation_status)}`}>
-              {t(`conservation.${bird.conservation_status}`)}
+              {t(`conservation.${bird.conservation_status}`, bird.conservation_status)}
             </div>
           </div>
 
@@ -120,7 +121,7 @@ function BirdDetail({ bird, onClose, initialPosition }) {
                 <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">
                   {t('conservationStatus')}
                 </h2>
-                <p className="text-lg text-gray-800">{t(`conservation.${bird.conservation_status}`)}</p>
+                <p className="text-lg text-gray-800">{t(`conservation.${bird.conservation_status}`, bird.conservation_status)}</p>
               </div>
 
               {bird.habitat && (
@@ -143,14 +144,18 @@ function BirdDetail({ bird, onClose, initialPosition }) {
             {bird.photo_credit && (
               <div className="pt-6 border-t border-gray-200">
                 <p className="text-sm text-gray-500">
-                  {t('photo')}: <a
-                    href={bird.photo_credit_url}
-                    className="text-emerald-600 hover:text-emerald-700 underline font-medium"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {bird.photo_credit}
-                  </a>
+                  {t('photo')}: {bird.photo_credit_url ? (
+                    <a
+                      href={bird.photo_credit_url}
+                      className="text-emerald-600 hover:text-emerald-700 underline font-medium"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {bird.photo_credit}
+                    </a>
+                  ) : (
+                    <span className="text-gray-700 font-medium">{bird.photo_credit}</span>
+                  )}
                 </p>
               </div>
             )}
