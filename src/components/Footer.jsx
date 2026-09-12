@@ -29,6 +29,12 @@ function Footer() {
                 {t('home')}
               </button>
               <a
+                href="support.html"
+                className="block text-sm hover:text-emerald-400 transition-colors"
+              >
+                {t('support')}
+              </a>
+              <a
                 href="https://github.com/burma-biodiv-platform/burma-birds"
                 target="_blank"
                 rel="noopener noreferrer"
